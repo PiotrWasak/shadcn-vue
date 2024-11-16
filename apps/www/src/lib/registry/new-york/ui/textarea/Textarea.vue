@@ -7,7 +7,7 @@ const props = defineProps<{
   defaultValue?: string | number
 }>()
 
-const modelValue = defineModel<string | number>({ default: '' })
+const modelValue = defineModel<string | number>()
 modelValue.value = props.defaultValue
 </script>
 
